@@ -31,6 +31,7 @@
 </head>
 <body>
 	<div class="fondo" id="fondo">
+		<img id="fondoImagen" src="https://richepatagonia.com/wp-content/uploads/2019/11/tortas-tartas.jpg">
 		<div class="mascara"></div>
 	</div>
 	<header id="encabezado">
@@ -60,42 +61,44 @@
 		<article class="inicio" id="inicio">
 			<img id="logo" src="Resources\Graphics\Trabajos con el logo_Norican.svg">
 		</article>
-		<article class="articulo contact" id="contact">
-			<div class="parrafo">
-				<h2>Contácto</h2>
-				<p>
-					Podés contactarte conmigo completando el siguiente formulario. O podés escribirme al siguiente e-mail:<br><br>
+		<div class="articulo-background">
+			<article class="articulo contact" id="contact">
+				<div class="parrafo">
+					<h2>Contácto</h2>
+					<p>
+						Podés contactarte conmigo completando el siguiente formulario. O podés escribirme al siguiente e-mail:<br><br>
 
-					<a href="mailto:mirta-pelozo@hotmail.com" class="link">mirta-pelozo@hotmail.com</a><br><br><br>
+						<a href="mailto:mirta-pelozo@hotmail.com" class="link">mirta-pelozo@hotmail.com</a><br><br><br>
 
-					O también, podés enviarme un mensaje vía WhatsApp al siguiente número:<br><br>
+						O también, podés enviarme un mensaje vía WhatsApp al siguiente número:<br><br>
 
-					<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D541144385812%26app%3Dfacebook%26entry_point%3Dpage_cta%26fbclid%3DIwAR3zETQUgyTu7kii4wWbcCaYSSiYfpTCckmDiG-dRcbyXOtS3Y25pzgGhVk&h=AT23kJRXrNs3AFH6gOtKU9SuWv5i3ZpXHrco934Im4jQ81Oyn-GdW7GPIgKlxLyumoBaoBadoPdoS4vE4jZQtCkLrMf_AZMxSIko8Aop6Vd9KKix2mQhByMGPrUZuCQg-NF6V1CleSTlcmc0fDJZSA" class="link" target="_blank">+54 9 11 4438-5812</a>
-				</p>
-			</div>
-			<form class="contact__input" id="contactInput" action="contact.php" method="post">
-				<div class="contact__input__item">
-					<input type="text" name="Nombre" class="contact__input__item__button" id="contactName" placeholder="Nombre" maxlength="50">
+						<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D541144385812%26app%3Dfacebook%26entry_point%3Dpage_cta%26fbclid%3DIwAR3zETQUgyTu7kii4wWbcCaYSSiYfpTCckmDiG-dRcbyXOtS3Y25pzgGhVk&h=AT23kJRXrNs3AFH6gOtKU9SuWv5i3ZpXHrco934Im4jQ81Oyn-GdW7GPIgKlxLyumoBaoBadoPdoS4vE4jZQtCkLrMf_AZMxSIko8Aop6Vd9KKix2mQhByMGPrUZuCQg-NF6V1CleSTlcmc0fDJZSA" class="link" target="_blank">+54 9 11 4438-5812</a>
+					</p>
 				</div>
-				<div class="contact__input__item">
-					<input type="email" name="E-mail" class="contact__input__item__button" id="contactEmail" placeholder="E-mail" maxlength="50">
-				</div>
-				<div class="contact__input__item">
-					<textarea name="Área de texto" class="contact__input__item__button" id="contactTextArea" placeholder="Mensaje (50 - 1000 caracteres)" maxlength="1000"></textarea>
-				</div>
-				<input type="submit" value="Enviar" class="contact__input__item__button-submit">
-			</form>
-		</article>
-		<article class="articulo about" id="about">
-			<div class="parrafo">
-				<h2>Acerca de mí</h2>
-				<p>Hola! mi nombre es Lucas Retamozo y soy un dibujante freelance argentino. Nací en Buenos Aires (Argentina), el 4 de Septiembre de 1998 y actualmente sigo viviendo acá.
+				<form class="contact__input" id="contactInput" action="contact.php" method="post">
+					<div class="contact__input__item">
+						<input type="text" name="Nombre" class="contact__input__item__button" id="contactName" placeholder="Nombre" maxlength="50">
+					</div>
+					<div class="contact__input__item">
+						<input type="email" name="E-mail" class="contact__input__item__button" id="contactEmail" placeholder="E-mail" maxlength="50">
+					</div>
+					<div class="contact__input__item">
+						<textarea name="Área de texto" class="contact__input__item__button" id="contactTextArea" placeholder="Mensaje (50 - 1000 caracteres)" maxlength="1000"></textarea>
+					</div>
+					<input type="submit" value="Enviar" class="contact__input__item__button-submit">
+				</form>
+			</article>
+			<article class="articulo about" id="about">
+				<div class="parrafo">
+					<h2>Acerca de mí</h2>
+					<p>Hola! mi nombre es Lucas Retamozo y soy un dibujante freelance argentino. Nací en Buenos Aires (Argentina), el 4 de Septiembre de 1998 y actualmente sigo viviendo acá.
 
-				Dibujo desde muy chico, pero comencé a tomarme en serio dicha práctica luego de terminar la secundaria. Actualmente estudio en la Facultad de Arquitectura, Diseño y Urbanismo (FADU), y en mis tiempos libres me dedico a dibujar sobre todo figura humana.
+					Dibujo desde muy chico, pero comencé a tomarme en serio dicha práctica luego de terminar la secundaria. Actualmente estudio en la Facultad de Arquitectura, Diseño y Urbanismo (FADU), y en mis tiempos libres me dedico a dibujar sobre todo figura humana.
 
-				Mis trabajos suelen ser tanto de tipo tradicional como digital, y mi sueño es poder, algún día, crear mi propio cómic.</p>
-			</div>
-		</article>
+					Mis trabajos suelen ser tanto de tipo tradicional como digital, y mi sueño es poder, algún día, crear mi propio cómic.</p>
+				</div>
+			</article>
+		</div>
 	</main>
 	<footer class="copyright">
 		© 2022 - Delicias de Alma / Página diseñada por Lucas Retamozo

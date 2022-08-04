@@ -6,10 +6,10 @@ window.addEventListener("scroll", function(){
 
 
 let logo = document.getElementById("logo");
-let fondo = document.getElementById("fondo")
+let fondo = document.getElementById("fondoImagen")
 
 window.addEventListener('scroll', function(){
 	let value = window.scrollY;
-	logo.style.marginTop = value * 1.25 + "px";
-	fondo.style.backgroundPositionY = value * -.05 + "px";
+	logo.style.marginTop = value * 1.05 + "px";
+	fondo.style.top = value * -0.05 + "px";
 })

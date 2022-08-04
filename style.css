@@ -74,12 +74,16 @@ a{
 
 
 .fondo{
-	background-image: url("https://richepatagonia.com/wp-content/uploads/2019/11/tortas-tartas.jpg");
-	background-size: cover;
-	background-repeat: none;
 	width: 100%;
 	height: 100vh;
 	position: fixed;
+}
+
+.fondo img{
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	height: 125%;
 }
 
 .mascara{
@@ -209,12 +213,24 @@ header.abajo .sociales__item:hover {
 	padding: 1.5rem;
 }
 
+.articulo-background{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color__z1);
+	height: 100%;
+	width: 100%;
+	padding: 4.5rem 3rem;
+	border-radius: 1.5rem;
+	gap: 1.5rem;
+	z-index: 200;
+}
+
 .articulo{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
-	background-color: var(--color__z1);
+	
 	min-height: 100vh;
-	padding: 1.5rem;
+	
 	gap: 1.5rem;
 	z-index: 200;
 	overflow: auto;
