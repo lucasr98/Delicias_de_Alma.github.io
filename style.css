@@ -405,6 +405,14 @@ i {
 
 @media only screen and (max-width: 540px){
 
+	:root{
+		font-size: .85rem;
+	}
+
+	.articulo-background{
+		padding: 4.5rem 1.5rem;
+	}
+
 	.inicio img{
 		max-width: 270px;
 		min-width: 50%;
@@ -439,9 +447,9 @@ i {
 		gap: .25rem;
 		justify-content: flex-start;
 		align-items: flex-start;
-		background-color: rgba(0, 0, 0, .25);
+		background-color: rgba(0, 0, 0, .5);
 		padding: 1.5rem;
-		width: 40%;
+		width: 10rem;
 		height: 100vh;
 		transition: .2s ease-in-out;
 		z-index: -50;
@@ -456,9 +464,9 @@ i {
 		gap: .25rem;
 		justify-content: flex-start;
 		align-items: flex-start;
-		background-color: rgba(0, 0, 0, .25);
+		background-color: rgba(0, 0, 0, .5);
 		padding: 1.5rem;
-		width: 40%;
+		width: 10rem;
 		height: 100vh;
 		transition: .2s ease-in-out;
 		z-index: -50;
