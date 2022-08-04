@@ -219,6 +219,10 @@ header.abajo .sociales__item:hover {
 	display: none;
 }
 
+.menu__grande{
+	display: none;
+}
+
 
 
 .cuerpo{
@@ -413,6 +417,10 @@ i {
 	.copyright{
 	}
 
+	.index{
+		display: none;
+	}
+
 	.checkbtn{
 		display: block;
 	}
@@ -422,7 +430,7 @@ i {
 		cursor: pointer;
 	}
 
-	.menu{
+	.menu__grande{
 		display: flex;
 		flex-direction: column;
 		position: fixed;
@@ -431,7 +439,7 @@ i {
 		gap: .25rem;
 		justify-content: flex-start;
 		align-items: flex-start;
-		background-color: var(--color__a1);
+		background-color: rgba(0, 0, 0, .75);
 		padding: 1.5rem;
 		width: 50%;
 		height: 100vh;
@@ -439,7 +447,24 @@ i {
 		z-index: -50;
 	}
 
-	#check:hover ~ .menu{
+	.menu__chico{
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 2.5rem;
+		left: -100%;
+		gap: .25rem;
+		justify-content: flex-start;
+		align-items: flex-start;
+		background-color: rgba(0, 0, 0, .75);
+		padding: 1.5rem;
+		width: 50%;
+		height: 100vh;
+		transition: .2s ease-in-out;
+		z-index: -50;
+	}
+
+	#check:checked ~ #menu{
 		left: 0;
 	}
 }
