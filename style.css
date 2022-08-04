@@ -65,6 +65,7 @@ p{
 	font-size: 1rem;
 	line-height: 1.2em;
 	color: var(--color__z2);
+	letter-spacing: .06em;
 }
 
 a{
@@ -125,7 +126,7 @@ header:hover {
 	gap: 1rem;
 }
 
-.sociales__item{
+.sociales__item, .checkbtn{
 	padding: .25rem 1rem;
 	color: var(--color__z1);
 	user-select: none;
@@ -142,7 +143,7 @@ header:hover {
     font-size: .75rem;
 }
 
-.sociales__item i{
+.sociales__item i, .checkbtn i{
 	font-size: 1.5rem;
 	transition: color, .2s;
 }
@@ -158,6 +159,15 @@ header:hover {
 }
 
 .sociales__item:hover > i{
+	color: var(--color__a5);
+}
+
+.checkbtn:hover {
+	background-size: 100% .1em;
+	color: var(--color__a5);
+}
+
+.checkbtn:hover > i{
 	color: var(--color__a5);
 }
 
@@ -203,6 +213,10 @@ header.abajo .sociales__item{
 header.abajo .sociales__item:hover {
 	background-size: 100% .1em;
 	color: var(--color__a5);
+}
+
+.checkbtn, #check{
+	display: none;
 }
 
 
@@ -251,6 +265,7 @@ header.abajo .sociales__item:hover {
 	max-width: 35vw;
 	min-width: 270px;
 	z-index: 100;
+	user-select: none;
 }
 
 .contact{
@@ -363,7 +378,7 @@ textarea{
 	transform: scale(1.05);
 }
 
-a > i {
+i {
 	color: var(--color__z1);
 	font-size: 2em;
 }
@@ -371,11 +386,11 @@ a > i {
 
 
 @media only screen and (max-width: 900px){
-	.a__text{
+	.redes .a__text{
 		display: none;
 	}
 	
-	.sociales__item{
+	.sociales__item, .checkbtn{
 		padding: .25rem .5rem;
 	}
 	
@@ -396,5 +411,35 @@ a > i {
 	}
 
 	.copyright{
+	}
+
+	.checkbtn{
+		display: block;
+	}
+
+	.checkbtn i{
+		display: flex;
+		cursor: pointer;
+	}
+
+	.menu{
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 5rem;
+		left: -100%;
+		gap: .25rem;
+		justify-content: flex-start;
+		align-items: flex-start;
+		background-color: var(--color__a1);
+		padding: 1.5rem;
+		width: 50%;
+		height: 100vh;
+		transition: .2s ease-in-out;
+		z-index: -50;
+	}
+
+	#check:hover ~ .menu{
+		left: 0;
 	}
 }
