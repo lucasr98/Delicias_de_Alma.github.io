@@ -59,6 +59,11 @@ h2{
 	line-height: 1.2em;
 	user-select: none;
 	color: var(--color__a4);
+
+	background-image: linear-gradient(var(--color__a4), var(--color__a4));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% .05em;
 }
 
 p{
@@ -88,11 +93,11 @@ a{
 }
 
 .mascara{
-	background-color: var(--color__z2);
-	opacity: .5;
+	background-color: rgba(0, 0, 0, .65);
 	height: 100vh;
 	width: 100%;
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(2.5px);
+	position: relative;
 }
 
 
@@ -239,19 +244,16 @@ header.abajo .sociales__item:hover {
 	width: 100%;
 	padding: 4.5rem 3rem;
 	border-radius: 1.5rem;
-	gap: 1.5rem;
+	gap: 3rem;
 	z-index: 200;
 }
 
 .articulo{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
-	
-	min-height: 100vh;
-	
-	gap: 1.5rem;
+	min-height: 90vh;
 	z-index: 200;
-	overflow: auto;
+	gap: 1.5rem;
 }
 
 
@@ -281,7 +283,7 @@ header.abajo .sociales__item:hover {
 .parrafo{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	gap: 1.5rem;
 }
 
@@ -293,6 +295,21 @@ header.abajo .sociales__item:hover {
 }
 
 .link:hover{
+	color: var(--color__a4);
+}
+
+.contact__a__text-container{
+	display: flex;
+	gap: 1.5rem;
+}
+
+.contact__a__text i{
+	color: var(--color__a3);
+	font-size: 1.5rem;
+	transition: color, .2s ease-in-out;
+}
+
+.contact__a__text:hover > i{
 	color: var(--color__a4);
 }
 
@@ -316,7 +333,10 @@ header.abajo .sociales__item:hover {
 	padding: .75rem 1rem;
 	width: 100%;
 	transition: background-color .2s ease-in-out;
+	outline: none;
 }
+
+.contact__input__item__button::placeholder { color: rgba(0, 0, 0, .5); }
 
 textarea{
 	resize: none;
@@ -337,6 +357,18 @@ textarea{
 
 .contact__input__item__button-submit:hover{
 	background-color: var(--color__a4);
+}
+
+.contact__warning{
+	display: flex;
+	padding: .5rem;
+	font-style: italic;
+	font-weight: 700;
+	color: var(--color__a5);
+}
+
+.contact__submit-text{
+	justify-content: right;
 }
 
 
@@ -410,7 +442,7 @@ i {
 	}
 
 	.articulo-background{
-		padding: 4.5rem 1.5rem;
+		padding: 2.25rem 1.5rem;
 	}
 
 	.inicio img{
@@ -427,6 +459,10 @@ i {
 
 	.index{
 		display: none;
+	}
+
+	.a__text{
+		font-size: 1rem;
 	}
 
 	.checkbtn{
@@ -449,10 +485,9 @@ i {
 		align-items: flex-start;
 		background-color: rgba(0, 0, 0, .5);
 		padding: 1.5rem;
-		width: 10rem;
-		height: 100vh;
+		width: 12.5rem;
 		transition: .2s ease-in-out;
-		z-index: -50;
+		z-index: 100;
 	}
 
 	.menu__chico{
@@ -466,10 +501,9 @@ i {
 		align-items: flex-start;
 		background-color: rgba(0, 0, 0, .5);
 		padding: 1.5rem;
-		width: 10rem;
-		height: 100vh;
+		width: 12.5rem;
 		transition: .2s ease-in-out;
-		z-index: -50;
+		z-index: 100;
 	}
 
 	#check:checked ~ #menu{

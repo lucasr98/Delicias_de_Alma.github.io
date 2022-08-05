@@ -30,6 +30,7 @@
 
 </head>
 <body>
+	<a name="home"></a>
 	<div class="fondo" id="fondo">
 		<img id="fondoImagen" src="https://richepatagonia.com/wp-content/uploads/2019/11/tortas-tartas.jpg">
 		<div class="mascara"></div>
@@ -40,7 +41,7 @@
 			<i class="fa-solid fa-bars"></i>
 		</label>
 		<ul class="menu__grande" id="menu">
-			<a href="#inicio" class="sociales__item">
+			<a href="#home" class="sociales__item">
 				<span class="a__text">INICIO</span>
 			</a>
 			<a href="#contact" class="sociales__item">
@@ -51,7 +52,7 @@
 			</a>
 		</ul>
 		<ul class="sociales index">
-			<a href="#inicio" class="sociales__item">
+			<a href="#home" class="sociales__item">
 				<span class="a__text">INICIO</span>
 			</a>
 			<a href="#contact" class="sociales__item">
@@ -74,10 +75,11 @@
 	</header>
 	<main class="cuerpo">
 		<article class="inicio" id="inicio">
-			<img id="logo" src="Resources\Graphics\Trabajos con el logo_Norican.svg">
+			<img id="logo" src="Resources\Graphics\ISOLogotipo_Kaushan.svg">
 		</article>
 		<div class="articulo-background">
-			<article class="articulo contact" id="contact">
+			<a name="contact"></a>
+			<article class="articulo contact">
 				<div class="parrafo">
 					<h2>Contácto</h2>
 					<p>
@@ -87,23 +89,42 @@
 
 						O también, podés enviarme un mensaje vía WhatsApp al siguiente número:<br><br>
 
-						<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D541144385812%26app%3Dfacebook%26entry_point%3Dpage_cta%26fbclid%3DIwAR3zETQUgyTu7kii4wWbcCaYSSiYfpTCckmDiG-dRcbyXOtS3Y25pzgGhVk&h=AT23kJRXrNs3AFH6gOtKU9SuWv5i3ZpXHrco934Im4jQ81Oyn-GdW7GPIgKlxLyumoBaoBadoPdoS4vE4jZQtCkLrMf_AZMxSIko8Aop6Vd9KKix2mQhByMGPrUZuCQg-NF6V1CleSTlcmc0fDJZSA" class="link" target="_blank">+54 9 11 4438-5812</a>
+						<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D541144385812%26app%3Dfacebook%26entry_point%3Dpage_cta%26fbclid%3DIwAR3zETQUgyTu7kii4wWbcCaYSSiYfpTCckmDiG-dRcbyXOtS3Y25pzgGhVk&h=AT23kJRXrNs3AFH6gOtKU9SuWv5i3ZpXHrco934Im4jQ81Oyn-GdW7GPIgKlxLyumoBaoBadoPdoS4vE4jZQtCkLrMf_AZMxSIko8Aop6Vd9KKix2mQhByMGPrUZuCQg-NF6V1CleSTlcmc0fDJZSA" class="link" target="_blank">+54 9 11 4438-5812</a><br><br><br>
+
+						Te invito a seguirme en mis redes sociales de:<br><br>
+
+						<span class="contact__a__text-container">
+							<a class="contact__a__text" href="https://www.instagram.com/pelozo.mirta/?hl=es-la" target="_blank">
+								<i class="fa-brands fa-instagram"></i>
+								<span class="link">Instagram</span>
+							</a>
+
+							<a class="contact__a__text" href="https://www.facebook.com/mirta.pelozo" target="_blank">
+								<i class="fa-brands fa-square-facebook"></i>
+								<span class="link">Facebook</span>
+							</a>
+						</span>
 					</p>
 				</div>
 				<form class="contact__input" id="contactInput" action="contact.php" method="post">
 					<div class="contact__input__item">
+						<span class="contact__warning" id="contactWarningN" for="Nombre"></span>
 						<input type="text" name="Nombre" class="contact__input__item__button" id="contactName" placeholder="Nombre" maxlength="50">
 					</div>
 					<div class="contact__input__item">
+						<span class="contact__warning" id="contactWarningE" for="E-mail"></span>
 						<input type="email" name="E-mail" class="contact__input__item__button" id="contactEmail" placeholder="E-mail" maxlength="50">
 					</div>
 					<div class="contact__input__item">
+						<span class="contact__warning" id="contactWarningT" for="Área de texto"></span>
 						<textarea name="Área de texto" class="contact__input__item__button" id="contactTextArea" placeholder="Mensaje (50 - 1000 caracteres)" maxlength="1000"></textarea>
 					</div>
 					<input type="submit" value="Enviar" class="contact__input__item__button-submit">
+					<p class="contact__warning contact__submit-text" id="contactWarning"></p>
 				</form>
 			</article>
-			<article class="articulo about" id="about">
+			<a name="about"></a>
+			<article class="articulo about">
 				<div class="parrafo">
 					<h2>Acerca de mí</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
