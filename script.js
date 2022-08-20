@@ -60,7 +60,6 @@ const warn = document.getElementById("contactWarning");
 let contador = 0;
 
 form.addEventListener("submit", e=>{
-	e.preventDefault()
 	let warningN = ""
 	let warningE = ""
 	let warningT = ""
@@ -80,6 +79,7 @@ form.addEventListener("submit", e=>{
 		entrar = true
 	}
 	if (entrar){
+		e.preventDefault()
 		warnN.innerHTML = warningN;
 		warnE.innerHTML = warningE;
 		warnT.innerHTML = warningT;
