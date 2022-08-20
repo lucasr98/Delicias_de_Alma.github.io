@@ -141,11 +141,11 @@ header:hover {
 	gap: .75em;
 
 	background-image: linear-gradient(var(--color__a5), var(--color__a5));
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% .1em;
-    transition: background-size, color, .2s;
-    font-size: .75rem;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% .1em;
+  transition: background-size, color, .2s;
+  font-size: .75rem;
 }
 
 .sociales__item i, .checkbtn i{
@@ -579,9 +579,5 @@ i {
 		width: 12.5rem;
 		transition: .2s ease-in-out;
 		z-index: 100;
-	}
-
-	#check:checked ~ #menu{
-		left: 0;
 	}
 }

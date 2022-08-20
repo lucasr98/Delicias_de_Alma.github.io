@@ -23,11 +23,13 @@ window.addEventListener('scroll', function(){
 
 function normalizado(){
 	if (contadorNormalizado == 0){
+		menu.style.left = "0";
 		header.style.backgroundColor = "var(--color__a1)";
 		header.style.boxShadow = "0px 0px .5rem 0px rgba(0, 0, 0, .75)";
 		contadorNormalizado = 1;
 	}
 	else {
+		menu.style.removeProperty("left");
 		header.style.removeProperty("background-color");
 		header.style.removeProperty("box-shadow");
 		contadorNormalizado = 0;
@@ -35,6 +37,8 @@ function normalizado(){
 }
 
 check.addEventListener("click", normalizado, true);
+
+
 
 // HTML GENERAL //
 

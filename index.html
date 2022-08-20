@@ -37,7 +37,7 @@
 	</div>
 	<header id="encabezado">
 		<input type="checkbox" id="check">
-		<label for="check" class="checkbtn">
+		<label title="Menu" for="check" class="checkbtn">
 			<i class="fa-solid fa-bars"></i>
 		</label>
 		<ul class="menu__grande" id="menu">
@@ -74,11 +74,11 @@
 		</ul>
 		<ul class="sociales redes">
 			<a href="https://www.instagram.com/pelozo.mirta/?hl=es-la" class="sociales__item" target="_blank">
-				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-instagram" title="Instagram"></i>
 				<span class="a__text">INSTAGRAM</span>
 			</a>
 			<a href="https://www.facebook.com/Las-Delicias-de-Alma-1523373591215503/" class="sociales__item" target="_blank">
-				<i class="fa-brands fa-square-facebook"></i>
+				<i class="fa-brands fa-square-facebook" title="Facebook"></i>
 				<span class="a__text">FACEBOOK</span>
 			</a>
 		</ul>
@@ -116,10 +116,10 @@
 						</span>
 					</p>
 				</div>
-				<form class="contact__input" id="contactInput" action="contact.php" method="post">
+				<form class="contact__input" id="contactInput" action="https://formsubmit.co/mirta-pelozo@hotmail.com" method="post">
 					<div class="contact__input__item">
 						<span class="contact__warning" id="contactWarningN" for="nombre"></span>
-						<input type="text" name="Nombre" class="contact__input__item__button" id="contactName" placeholder="Nombre" maxlength="50">
+						<input type="text" name="name" class="contact__input__item__button" id="contactName" placeholder="Nombre" maxlength="50">
 					</div>
 					<div class="contact__input__item">
 						<span class="contact__warning" id="contactWarningE" for="E-mail"></span>
@@ -127,7 +127,7 @@
 					</div>
 					<div class="contact__input__item">
 						<span class="contact__warning" id="contactWarningT" for="Área de texto"></span>
-						<textarea name="texto" class="contact__input__item__button" id="contactTextArea" placeholder="Mensaje (50 - 1000 caracteres)" maxlength="1000"></textarea>
+						<textarea name="textarea" class="contact__input__item__button" id="contactTextArea" placeholder="Mensaje (50 - 1000 caracteres)" maxlength="1000"></textarea>
 					</div>
 					<input type="submit" value="Enviar" class="contact__input__item__button-submit">
 					<p class="contact__warning contact__submit-text" id="contactWarning"></p>
